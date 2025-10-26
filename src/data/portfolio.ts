@@ -6,8 +6,8 @@ export const bio: Bio = {
   lastName: 'Xu',
   title: 'Software Engineer & CS Graduate Student',
   description: [
-    "I'm a Computer Science Master's student at Johns Hopkins University with 4+ years of industry experience at Google, where I built Chrome's media features used by millions. Currently conducting AI/ML research in surgical robotics while preparing for my upcoming internship at Apple.",
-    'I specialize in full-stack development, systems engineering, and machine learning. My passion lies in building robust, scalable software—from crafting elegant user interfaces to optimizing low-level performance and developing intelligent systems.',
+    "I'm a Computer Science Master's student at Johns Hopkins University with 4+ years of industry experience at Google and Apple. ",
+    "I'm extremely passionate about every aspect of Computer Science. Always eager to learn new technology.",
   ],
   educations: [
     {
@@ -23,7 +23,7 @@ export const bio: Bio = {
   ],
   experience: [
     {
-      title: 'Software Engineer Intern - AMT',
+      title: 'Software Engineer Intern - Streaming Media',
       company: 'Apple',
       period: 'May 2025 - Aug 2025',
       description: [
@@ -69,6 +69,15 @@ export const projects: Project[] = [
   },
   {
     id: '3',
+    title: 'Project Three',
+    description:
+      'Mobile-first responsive website with modern UI/UX principles. Optimized for performance and accessibility.',
+    image: 'https://via.placeholder.com/400x300',
+    tags: ['Next.js', 'TypeScript', 'CSS'],
+    liveUrl: 'https://example.com',
+  },
+  {
+    id: '4',
     title: 'Project Three',
     description:
       'Mobile-first responsive website with modern UI/UX principles. Optimized for performance and accessibility.',
