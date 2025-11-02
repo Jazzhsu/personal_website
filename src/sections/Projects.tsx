@@ -9,15 +9,15 @@ import 'swiper/css/pagination';
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="projects" className="py-20 bg-mocha-mantle">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Projects
+          <h2 className="text-3xl sm:text-4xl font-bold text-mocha-text mb-4">
+            Projects (Under Construction...)
           </h2>
-          <div className="w-20 h-1 bg-blue-600 mx-auto rounded"></div>
-          <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+          <div className="w-20 h-1 bg-mocha-blue mx-auto rounded"></div>
+          <p className="mt-4 text-lg text-mocha-subtext0">
             Here are some of my recent works
           </p>
         </div>
@@ -40,9 +40,9 @@ const Projects = () => {
           >
             {projects.map(project => (
               <SwiperSlide key={project.id} className="!w-[350px] sm:!w-[380px]">
-                <div className="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full">
+                <div className="bg-mocha-surface0 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col h-full">
                   {/* Project Image */}
-                  <div className="relative h-48 overflow-hidden bg-gray-200 dark:bg-gray-700">
+                  <div className="relative h-64 overflow-hidden bg-mocha-surface1">
                     <img
                       src={project.image}
                       alt={project.title}
@@ -52,10 +52,10 @@ const Projects = () => {
 
                   {/* Project Info */}
                   <div className="p-6 flex-1 flex flex-col">
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                    <h3 className="text-xl font-bold text-mocha-text mb-2">
                       {project.title}
                     </h3>
-                    <p className="text-gray-600 dark:text-gray-400 mb-4 flex-1">
+                    <p className="text-mocha-subtext0 mb-4 flex-1">
                       {project.description}
                     </p>
 
@@ -64,7 +64,7 @@ const Projects = () => {
                       {project.tags.map((tag, idx) => (
                         <span
                           key={idx}
-                          className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full"
+                          className="px-3 py-1 bg-mocha-blue/20 text-mocha-lavender text-sm rounded-full"
                         >
                           {tag}
                         </span>
@@ -78,7 +78,7 @@ const Projects = () => {
                           href={project.githubUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                          className="flex items-center gap-2 text-mocha-subtext0 hover:text-mocha-lavender transition-colors"
                         >
                           <FaGithub size={20} />
                           <span className="text-sm font-medium">Code</span>
@@ -89,7 +89,7 @@ const Projects = () => {
                           href={project.liveUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                          className="flex items-center gap-2 text-mocha-subtext0 hover:text-mocha-lavender transition-colors"
                         >
                           <FaExternalLinkAlt size={18} />
                           <span className="text-sm font-medium">Live Demo</span>

@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin, FaEnvelope, FaApple, FaGoogle } from 'react-icons/fa';
 import type { Project, Skill, SocialLink, Bio } from '../types';
+import wavesLogo from '../assets/waves_v2.png'
 
 export const bio: Bio = {
   firstName: 'Jiru',
@@ -51,41 +52,40 @@ export const bio: Bio = {
 export const projects: Project[] = [
   {
     id: '1',
-    title: 'Project One',
+    title: 'WAVES V2',
     description:
-      'A modern web application built with React and TypeScript. Features include real-time updates, responsive design, and seamless user experience.',
-    image: 'https://via.placeholder.com/400x300',
-    tags: ['React', 'TypeScript', 'Tailwind CSS'],
-    githubUrl: 'https://github.com',
-    liveUrl: 'https://example.com',
+      'Revamped version of original WAVE for benchmarking image watermarking algorithm.',
+    image: wavesLogo,
+    tags: ['Python', 'Pytorch'],
+    githubUrl: 'https://github.com/Jazzhsu/WAVES_V2',
   },
-  {
-    id: '2',
-    title: 'Project Two',
-    description:
-      'Full-stack application with Node.js backend and React frontend. Implements authentication, database integration, and RESTful API design.',
-    image: 'https://via.placeholder.com/400x300',
-    tags: ['Node.js', 'Express', 'MongoDB', 'React'],
-    githubUrl: 'https://github.com',
-  },
-  {
-    id: '3',
-    title: 'Project Three',
-    description:
-      'Mobile-first responsive website with modern UI/UX principles. Optimized for performance and accessibility.',
-    image: 'https://via.placeholder.com/400x300',
-    tags: ['Next.js', 'TypeScript', 'CSS'],
-    liveUrl: 'https://example.com',
-  },
-  {
-    id: '4',
-    title: 'Project Three',
-    description:
-      'Mobile-first responsive website with modern UI/UX principles. Optimized for performance and accessibility.',
-    image: 'https://via.placeholder.com/400x300',
-    tags: ['Next.js', 'TypeScript', 'CSS'],
-    liveUrl: 'https://example.com',
-  },
+  // {
+  //   id: '2',
+  //   title: 'Project Two',
+  //   description:
+  //     'Full-stack application with Node.js backend and React frontend. Implements authentication, database integration, and RESTful API design.',
+  //   image: 'https://via.placeholder.com/400x300',
+  //   tags: ['Node.js', 'Express', 'MongoDB', 'React'],
+  //   githubUrl: 'https://github.com',
+  // },
+  // {
+  //   id: '3',
+  //   title: 'Project Three',
+  //   description:
+  //     'Mobile-first responsive website with modern UI/UX principles. Optimized for performance and accessibility.',
+  //   image: 'https://via.placeholder.com/400x300',
+  //   tags: ['Next.js', 'TypeScript', 'CSS'],
+  //   liveUrl: 'https://example.com',
+  // },
+  // {
+  //   id: '4',
+  //   title: 'Project Three',
+  //   description:
+  //     'Mobile-first responsive website with modern UI/UX principles. Optimized for performance and accessibility.',
+  //   image: 'https://via.placeholder.com/400x300',
+  //   tags: ['Next.js', 'TypeScript', 'CSS'],
+  //   liveUrl: 'https://example.com',
+  // },
 ];
 
 export const skills: Skill[] = [
