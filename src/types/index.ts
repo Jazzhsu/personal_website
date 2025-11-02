@@ -5,6 +5,7 @@ export interface Bio {
   description: string[];
   educations: Education[];
   experience: Experience[];
+  githubUsername?: string;
 }
 
 export interface Project {

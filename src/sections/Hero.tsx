@@ -1,4 +1,5 @@
 import { bio, socialLinks } from '../data/portfolio';
+import GitHubCalendarComponent from '../components/GitHubCalendar';
 
 const Hero = () => {
   const fullName = `${bio.firstName} ${bio.lastName}`;
@@ -63,6 +64,13 @@ const Hero = () => {
               </a>
             ))}
           </div>
+
+          {/* GitHub Contribution Calendar */}
+          {bio.githubUsername && (
+            <div className="mt-12 bg-white dark:bg-gray-800 rounded-xl shadow-xl p-6 max-w-4xl mx-auto">
+              <GitHubCalendarComponent username={bio.githubUsername} />
+            </div>
+          )}
         </div>
       </div>
     </section>

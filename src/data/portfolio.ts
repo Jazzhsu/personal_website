@@ -45,6 +45,7 @@ export const bio: Bio = {
       icon: FaGoogle,
     },
   ],
+  githubUsername: 'Jazzhsu',
 };
 
 export const projects: Project[] = [
